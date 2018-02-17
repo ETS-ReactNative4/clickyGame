@@ -26,7 +26,7 @@ class Footer extends Component {
                 </div>
             </footer>
         ); // END RETURN        
-    }
+    } // END RENDER
 }; // END FOOTER
 
 // EXPORT FOOTER
