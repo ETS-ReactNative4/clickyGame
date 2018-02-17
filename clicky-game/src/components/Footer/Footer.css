@@ -4,6 +4,7 @@
  |=============================================|
  */
 
- .page-footer {
-     bacground-collor: red;
+ .footer {
+     background-color: #868686;
+     padding: 20px 0;
  }
