@@ -1,6 +1,6 @@
 
 /*
-    APP FILE CONTAINS THE APP COMPONENT THAT ALL THE OTHER GET RENDERED ON. 
+    APP.JSXCONTAINS THE APP COMPONENT THAT ALL THE OTHER GET RENDERED ON. 
 */
 
 // DEPENDENCIES
@@ -8,8 +8,10 @@ import React, {Component} from "react";
 
 // JUMBOTRON
 import Jumbotron from "./components/Jumbotron";
-//HEADER
+// HEADER
 import Header from "./components/Header";
+// FOOTER 
+import Footer from "./components/Footer";
 
 // APP COMPONENT
 class App extends Component {
@@ -25,11 +27,14 @@ class App extends Component {
                 </div>
                 {/* JUMBOTRON */}
                 <div className="row">
-                        <Jumbotron  />     
+                    <Jumbotron  />     
+                </div>
+                <div className="row">
+                    <Footer />
                 </div>
             </div>
-        ); // END RETURN
-    };// END RENDER
+        );  // END RETURN
+    };  // END RENDER
 };  // END APP COMPONENT
 
 // EXPORT APP COMPONENT
