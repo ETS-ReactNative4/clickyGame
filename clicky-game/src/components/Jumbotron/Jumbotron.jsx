@@ -1,3 +1,9 @@
+
+/*
+    JUMBOTRON.JSX CONTAINS THE JUMBOTRON COMPONENT
+*/
+
+// DEPENDENCIES
 import React from "react";
 // JUMBOTRON STYLES
 import "./Jumbotron.css";
@@ -6,8 +12,8 @@ import "./Jumbotron.css";
 const Jumbotron = ({ children }) => {
     // RETURN THE HTML FOR THE JUMBOTRON    
     return (
-        // JUMBOTRON START
-        <div className="jumbotron">
+        // BOOTSTRAP JUMBOTRON 
+        <div className="jumbotron col-xs-12 col-sm-12 col-md-12 text-center">
             <h1>
                 Hello World! 
             </h1>

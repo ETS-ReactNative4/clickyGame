@@ -1,6 +1,4 @@
 
-
-
 /*
     APP FILE CONTAINS THE APP COMPONENT THAT ALL THE OTHER GET RENDERED ON. 
 */
@@ -10,6 +8,8 @@ import React, {Component} from "react";
 
 // JUMBOTRON
 import Jumbotron from "./components/Jumbotron";
+//HEADER
+import Header from "./components/Header";
 
 // APP COMPONENT
 class App extends Component {
@@ -17,12 +17,15 @@ class App extends Component {
     render () {
         // RETRUN THIS HTML
         return (
-            // BOOTSTRAP CONTAINER
-            <div className="container">
-                <div className="row text-center">
-                    <div className="col-xs-12 col-sm-12 col-md-12">
-                        <Jumbotron  />
-                    </div>      
+            // THESE COMPONENTS STAY OUT OF THE CONTAINER
+            <div>
+                {/* HEADER */}
+                <div className="row">
+                    <Header />
+                </div>
+                {/* JUMBOTRON */}
+                <div className="row">
+                        <Jumbotron  />     
                 </div>
             </div>
         ); // END RETURN
