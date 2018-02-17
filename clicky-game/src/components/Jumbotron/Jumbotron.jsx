@@ -8,7 +8,9 @@ const Jumbotron = ({ children }) => {
     return (
         // JUMBOTRON START
         <div className="jumbotron">
-            Hello World!
+            <h1>
+                Hello World! 
+            </h1>
         </div>        
     ); // END RETURN
 }; // END JUMBOTRON
