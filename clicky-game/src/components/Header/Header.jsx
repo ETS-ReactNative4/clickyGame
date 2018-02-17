@@ -15,16 +15,16 @@ const Header = ({ children }) => {
         // HEADER
         <div className="col-xs-12 col-xs-12 col-md-12 text-center header">
             {/* COMMUMN ONE */}
-            <div className="col-xs-4">
-                ONE 
+            <div className="clicker col-xs-4">
+                CLICKER! 
             </div>
             {/* COMMUMN TWO */}
-            <div className="col-xs-4">
-                TWO
+            <div className="answer col-xs-4">
+                Correct Guess!
             </div>
             {/* COMMUMN THREE */}
-            <div className="col-xs-4">
-                THREE
+            <div className="score col-xs-4">
+              Score: 10 | Top-Score: 10
             </div>
         </div>
     ); // END RETURN
