@@ -1,6 +1,6 @@
 /* 
  |=============================================|
-                HEADER STYLES
+                NAVBAR STYLES
  |=============================================|
  */
 
@@ -18,7 +18,7 @@
 }
 
 .answer {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 200;
     color: #ffff;
 }

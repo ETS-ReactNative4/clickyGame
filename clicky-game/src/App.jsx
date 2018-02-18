@@ -8,8 +8,8 @@ import React, {Component} from "react";
 
 // JUMBOTRON
 import Jumbotron from "./components/Jumbotron";
-// HEADER
-import Header from "./components/Header";
+// NAVBAR
+import Navbar from "./components/Navbar";
 // FOOTER 
 import Footer from "./components/Footer";
 
@@ -21,9 +21,9 @@ class App extends Component {
         return (
             // THESE COMPONENTS STAY OUT OF THE CONTAINER
             <div>
-                {/* HEADER */}
+                {/* NAVBAR */}
                 <div className="row">
-                    <Header />
+                    <Navbar />
                 </div>
                 {/* JUMBOTRON */}
                 <div className="row">

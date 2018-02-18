@@ -18,7 +18,7 @@ class Footer extends Component {
             <footer className="footer text-center">
                 <div className="container">
                     <p>
-                        © Clicker! | Joshua Spears-Phillips
+                        © CLICKER! | Joshua Spears-Phillips
                     </p>
                 </div>
             </footer>

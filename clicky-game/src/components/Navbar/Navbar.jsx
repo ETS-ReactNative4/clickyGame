@@ -1,20 +1,20 @@
 
 /*
-    HEADER.JSX CONTAINS THE HEADER COMPONENT
+    NAVBAR.JSX CONTAINS THE NAVBAR COMPONENT
 */
 
 // DEPENDENCIES
 import React, {Component} from "react";
-// HEADER STYLES
-import "./Header.css";
+// NAVBAR STYLES
+import "./Navbar.css";
 
-// HEADER COMPONENT
-class Header extends Component {
+// NAVBAR COMPONENT
+class Navbar extends Component {
     // RENDER 
     render () {
-        // RETURN THE HTML FOR THE HEADER
+        // RETURN THE HTML FOR THE NAVBAR
         return (
-            // HEADER
+            // NAVBAR
             <div className="col-xs-12 col-xs-12 col-md-12 text-center header">
                 {/* COMMUMN ONE */}
                 <div className="clicker col-xs-4">
@@ -31,7 +31,7 @@ class Header extends Component {
             </div>
         ); // END RETURN        
     } // END RENDER
-}; // END HEADER
+}; // END NAVBAR
 
-// EXPORT HEADER
-export default Header;
+// EXPORT NAVBAR
+export default Navbar;
