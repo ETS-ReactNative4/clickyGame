@@ -12,6 +12,8 @@ import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
 // FOOTER 
 import Footer from "./components/Footer";
+//  IMAGES
+// import Heros from "./Heros";
 
 // APP COMPONENT
 class App extends Component {
@@ -28,7 +30,7 @@ class App extends Component {
                 {/* JUMBOTRON */}
                 <div className="row">
                     <Jumbotron  />     
-                </div>
+                </div>                
                 <div className="row">
                     <Footer />
                 </div>
