@@ -16,8 +16,8 @@ class Jumbotron extends Component {
         return (
             // BOOTSTRAP JUMBOTRON 
             <div className="jumbotron col-xs-12 col-sm-12 col-md-12 text-center">
-                <h1>
-                    Hello World! 
+                <h1 className="jumbo-header">
+                    Dont click the same picture twice!
                 </h1>
             </div>        
         ); // END RETURN        

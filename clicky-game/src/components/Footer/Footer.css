@@ -5,6 +5,8 @@
  */
 
  .footer {
-     background-color: #868686;
-     padding: 20px 0;
+     background-color: #6E6E6E;
+     padding: 35px 0;
+     font-weight: 200;
+     font-size: 20px;
  }

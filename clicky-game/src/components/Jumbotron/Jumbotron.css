@@ -5,8 +5,13 @@
  */
 
 .jumbotron {
-    color: #ffffff;
+    color: #00E500;
     height: 400px;
     clear: 'both';
-    background-color: #3A3A3A;
+
+    background-color: #373737;
+}
+
+.jumbo-header {
+    font-weight: 300;    
 }
