@@ -1,4 +1,3 @@
-
 /*
     IMAGE.JSX CONTAINS THE IMAGE COMPONENT THAT ALL THE IMAGES WILL RENDER AS
 */
@@ -9,17 +8,22 @@ import React, {Component} from "react";
 import "./Image.css";
 
 // IMAGE COMPONENT
-class Image extends Component {
-    // RENDER
-    render () {
-        // RETURN THE HTML FOR THE IMAGE    
-        return (
-            <button>
-                IMAGE BUTTON
-            </button>
-        ); // END RETURN        
-    } // END RENDER 
+function Image(props) {
+
+    const image = props.image;
+  
+    const renderImage = image.map((img) =>
+      <button type="button" class="btn btn-default btn-lg">
+        {image.link}
+      </button>
+
+    // RENDER RETURN THE HTML FOR THE IMAGE
+    return (
+        <div class="col-xs-4 col-sm-3 col-md-3">
+
+        </div>
+    ); // END RETURN
 }; // END IMAGE
 
-// EXPORT IMAGE 
+// EXPORT IMAGE
 export default Image;

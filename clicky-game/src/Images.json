@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "link": "The Flash"
+    },
+    {
+        "id": "2",
+        "link": "Catwoman"      
+    },
+     {
+        "id": "3",
+        "link": "Superman"  
+    },
+    {
+        "id": "4",
+        "link": "Mr. Freeze"
+    },
+    {
+        "id": "5",
+        "link": "Batman"
+    },
+    {
+        "id": "6",
+        "link": "Cyborg"      
+    },
+    {
+        "id": "7",
+        "link": "Joker"
+    },
+    {
+        "id": "8",
+        "link": "Wonder Woman"        
+    },
+    {
+        "id": "9",
+        "link": "Aqua Man"  
+    },
+    {
+        "id": "10",
+        "link": "Arrow" 
+    },
+    {
+        "id": "11",
+        "link": "Reverse Flash" 
+    },
+    {
+        "id": "12",
+        "link": "Killer Frost" 
+    }
+]

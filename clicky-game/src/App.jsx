@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 import Image from "./components/Image";
 
 //  IMAGES
-// import Heros from "./Heros";
+import Pic from "./Images.json";
 
 // APP COMPONENT
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
                     <Jumbotron  />     
                 </div> 
                 <div className="row">
-                    <Image />
+                    <Image image={Pic}/>
                 </div>                
                 <div className="row">
                     <Footer />
