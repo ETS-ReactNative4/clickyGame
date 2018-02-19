@@ -12,12 +12,20 @@ function Image(props) {
     // IMAGE IS THE IMAGE ARRAY TAKEN IN AS A PROP
     const image = props.image;
     // RENDER IMAGE IS A LOOP THAT CREATES MULTIPLE IMAGES FROM THE ARRAY
-    const renderImage = image.map(img => <button type="button" class="btn col-xs-4 col-xs-3 col-xs-3" key={img.id}>
-        {img.link}
-    </button>);
+    const renderImage = image.map(img => {
+        // RETURN THIS COMPONENT
+        return(
+            <div class="col-xs-4 col-xs-3 col-xs-3">
+                <button type="button" class="btn btn-default btn-lg" key={img.id}>
+                    {img.link}
+                </button>  
+            </div>
+        ); // END RETURN
+    }); // END RENDER IMAGE
+
     // RENDER RETURN THE HTML FOR THE IMAGE
     return (
-        <div>
+        <div class=" ">
             {renderImage}
         </div>
     ); // END RETURN
