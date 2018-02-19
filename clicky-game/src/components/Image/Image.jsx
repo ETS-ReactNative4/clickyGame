@@ -3,7 +3,7 @@
 */
 
 // DEPENDENCIES
-import React, {Component} from "react";
+import React from "react";
 // IMAGE STYLES
 import "./Image.css";
 
@@ -11,16 +11,16 @@ import "./Image.css";
 function Image(props) {
 
     const image = props.image;
-  
-    const renderImage = image.map((img) =>
-      <button type="button" class="btn btn-default btn-lg">
-        {image.link}
-      </button>
+
+    const renderImage = image.map(img => <button type="button" class="btn btn-default btn-lg" key={img.id}>
+            {img.link}
+        </button>
+    );
 
     // RENDER RETURN THE HTML FOR THE IMAGE
     return (
-        <div class="col-xs-4 col-sm-3 col-md-3">
-
+        <div>
+            {renderImage}
         </div>
     ); // END RETURN
 }; // END IMAGE
