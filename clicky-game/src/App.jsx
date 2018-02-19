@@ -12,6 +12,9 @@ import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
 // FOOTER 
 import Footer from "./components/Footer";
+// IMAGE
+import Image from "./components/Image";
+
 //  IMAGES
 // import Heros from "./Heros";
 
@@ -30,10 +33,14 @@ class App extends Component {
                 {/* JUMBOTRON */}
                 <div className="row">
                     <Jumbotron  />     
+                </div> 
+                <div className="row">
+                    <Image />
                 </div>                
                 <div className="row">
                     <Footer />
                 </div>
+
             </div>
         );  // END RETURN
     };  // END RENDER
