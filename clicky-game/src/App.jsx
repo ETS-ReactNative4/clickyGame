@@ -34,13 +34,15 @@ class App extends Component {
                 <div className="row">
                     <Jumbotron  />     
                 </div> 
-                <div className="row">
-                    <Image image={Pic}/>
-                </div>                
+                <div className="container">
+                    {/* IMAGE */}
+                    <div className="row">
+                        <Image image={Pic}/>
+                    </div>                  
+                </div>
                 <div className="row">
                     <Footer />
                 </div>
-
             </div>
         );  // END RETURN
     };  // END RENDER
