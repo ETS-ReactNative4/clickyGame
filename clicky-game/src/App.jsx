@@ -20,6 +20,16 @@ import Pic from "./Images.json";
 
 // APP COMPONENT
 class App extends Component {
+
+
+
+    playerGuess = event => {
+        // PREVENT PAGE FROM RELODAING
+        event.preventDefault();
+        console.log("Player gues exicuted");
+    };
+
+
     // RENDRER
     render () {
         // RETRUN THIS HTML
@@ -37,7 +47,9 @@ class App extends Component {
                 <div className="container">
                     {/* IMAGE */}
                     <div className="row">
-                        <Image image={Pic}/>
+                        <Image 
+                            onClick={this.playerGuess}
+                            image={Pic}/>
                     </div>                  
                 </div>
                 <div className="row">
