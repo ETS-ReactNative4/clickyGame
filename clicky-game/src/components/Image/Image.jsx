@@ -16,7 +16,7 @@ function Image(props) {
         // RETURN THIS COMPONENT
         return(
             <div class="col-xs-4 col-xs-3 col-xs-3">
-                <button type="button" class="btn btn-default btn-lg" key={img.id}>
+                <button onClick={onClick} type="button" class="btn btn-default btn-lg" key={img.id}>
                     {img.link}
                 </button>  
             </div>
@@ -25,7 +25,7 @@ function Image(props) {
 
     // RENDER RETURN THE HTML FOR THE IMAGE
     return (
-        <div class=" ">
+        <div>
             {renderImage}
         </div>
     ); // END RETURN
