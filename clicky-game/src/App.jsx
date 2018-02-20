@@ -26,7 +26,7 @@ class App extends Component {
     playerGuess = event => {
         // PREVENT PAGE FROM RELODAING
         event.preventDefault();
-        console.log("Player gues exicuted");
+        console.log(this.name);
     };
 
 
