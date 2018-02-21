@@ -16,7 +16,7 @@ function Image(props) {
         // RETURN THIS COMPONENT
         return(
             <div class="col-xs-4 col-xs-3 col-xs-3">
-                <button onClick={props.onClick} type="button" class="btn btn-default btn-lg" key={img.id}>
+                <button onClick={ (e) => { e.preventDefault(); props.onClick(img.id)}} type="button" class="btn btn-default btn-lg" key={img.id}>
                     {img.link}
                 </button>  
             </div>

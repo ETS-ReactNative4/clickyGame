@@ -21,12 +21,10 @@ import Pic from "./Images.json";
 // APP COMPONENT
 class App extends Component {
 
+    
 
-
-    playerGuess = event => {
-        // PREVENT PAGE FROM RELODAING
-        event.preventDefault();
-        console.log(this.name);
+    playerGuess = (id) => {
+        console.log(id);
     };
 
 
