@@ -23,7 +23,6 @@ const guess = [];
 // APP COMPONENT
 class App extends Component {
 
-
     // PLAYER GUESS
     playerGuess = (id) => {
         // LOG THE ID 

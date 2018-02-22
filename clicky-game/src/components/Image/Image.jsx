@@ -7,18 +7,34 @@ import React from "react";
 // IMAGE STYLES
 import "./Image.css";
 
+function shuffleArray(array) {
+    let i = array.length - 1;
+    for (; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+
 // IMAGE COMPONENT
 function Image(props) {
     // IMAGE IS THE IMAGE ARRAY TAKEN IN AS A PROP
     const image = props.image;
+
+
+    const shuffledPosts = shuffleArray(image);
+
+
     // RENDER IMAGE IS A LOOP THAT CREATES MULTIPLE IMAGES FROM THE ARRAY
-    const renderImage = image.map(img => {
+    const renderImage = shuffledPosts.map(img => {
         // RETURN THIS COMPONENT
-        return(
+        return (
             <div class="col-xs-4 col-xs-3 col-xs-3">
-                <button onClick={ (e) => { e.preventDefault(); props.onClick(img.id)}} type="button" class="btn btn-default btn-lg" key={img.id}>
+                <button onClick={(e) => { e.preventDefault(); props.onClick(img.id) }} type="button" class="btn btn-default btn-lg" key={img.id}>
                     {img.link}
-                </button>  
+                </button>
             </div>
         ); // END RETURN
     }); // END RENDER IMAGE
