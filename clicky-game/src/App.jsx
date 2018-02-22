@@ -23,7 +23,7 @@ const guess = [];
 // APP COMPONENT
 class App extends Component {
 
-    
+
     // PLAYER GUESS
     playerGuess = (id) => {
         // LOG THE ID 
@@ -32,15 +32,6 @@ class App extends Component {
         guess.push(id);
         // LOG THE ARRAY WITH THE NEW ENTRY 
         console.log(guess);
-
-        for(let i = 0; i < guess.length; i++) {
-            if (id != guess[i]) {
-                console.log(`${i} has been selected already.`);
-            }   else {
-                console.log(`You have chosen ${i}.`);
-            }
-        }
-
     }; // END PLAYER GUESS
 
 
