@@ -36,9 +36,9 @@ function Image(props) {
                     e.preventDefault();
                     props.onClick(img.id)
                 }}
-                    type="button"
-                    class="btn btn-default btn-lg"
-                    key={img.id}>
+                    type = "button"
+                    class = "btn btn-default btn-lg"
+                    key = {img.id}>
                     {img.link}
                 </button>
             </div>

@@ -40,15 +40,6 @@ class App extends Component {
         console.log(guess);
 
 
-        
-        for (let i = 0; i < guess.length; i++) {
-            if (id !== guess.indexOf(i)) {
-                console.log(`You chose ${id}`);
-            } else {
-                console.log(`${id} has already been chosen.`);
-            };
-        };
-
 
 
     }; // END PLAYER GUESS
