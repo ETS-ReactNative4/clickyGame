@@ -23,6 +23,13 @@ const guess = [];
 // APP COMPONENT
 class App extends Component {
 
+    constructor (props) {
+        super(props);
+        this.state = {
+            correct: true
+        };
+    }
+
     // PLAYER GUESS
     playerGuess = (id) => {
         // LOG THE ID 
@@ -31,6 +38,19 @@ class App extends Component {
         guess.push(id);
         // LOG THE ARRAY WITH THE NEW ENTRY 
         console.log(guess);
+
+
+        
+        for (let i = 0; i < guess.length; i++) {
+            if (id !== guess.indexOf(i)) {
+                console.log(`You chose ${id}`);
+            } else {
+                console.log(`${id} has already been chosen.`);
+            };
+        };
+
+
+
     }; // END PLAYER GUESS
 
 

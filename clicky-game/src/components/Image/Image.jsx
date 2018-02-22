@@ -7,6 +7,7 @@ import React from "react";
 // IMAGE STYLES
 import "./Image.css";
 
+// SHUFFLE ARRAY MOVES EVERYTHING IN THE ARRAY AROUND RANDOMLY BEFORE RENDERING
 function shuffleArray(array) {
     let i = array.length - 1;
     for (; i > 0; i--) {
@@ -16,23 +17,28 @@ function shuffleArray(array) {
         array[j] = temp;
     }
     return array;
-}
+}; // END SHUFFLE ARRAY
 
 // IMAGE COMPONENT
 function Image(props) {
+
     // IMAGE IS THE IMAGE ARRAY TAKEN IN AS A PROP
     const image = props.image;
-
-
+    // PASS THE IMAGES INTO THE SHUFFLE ARRAY FUNCTION ABOVE
     const shuffledPosts = shuffleArray(image);
-
 
     // RENDER IMAGE IS A LOOP THAT CREATES MULTIPLE IMAGES FROM THE ARRAY
     const renderImage = shuffledPosts.map(img => {
         // RETURN THIS COMPONENT
         return (
             <div class="col-xs-4 col-xs-3 col-xs-3">
-                <button onClick={(e) => { e.preventDefault(); props.onClick(img.id) }} type="button" class="btn btn-default btn-lg" key={img.id}>
+                <button onClick={(e) => {
+                    e.preventDefault();
+                    props.onClick(img.id)
+                }}
+                    type="button"
+                    class="btn btn-default btn-lg"
+                    key={img.id}>
                     {img.link}
                 </button>
             </div>
