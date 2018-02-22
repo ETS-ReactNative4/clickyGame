@@ -26,9 +26,21 @@ class App extends Component {
     
     // PLAYER GUESS
     playerGuess = (id) => {
+        // LOG THE ID 
         console.log(id);
+        // PUSH THE ID INTO THE ARRAY
         guess.push(id);
+        // LOG THE ARRAY WITH THE NEW ENTRY 
         console.log(guess);
+
+        for(let i = 0; i < guess.length; i++) {
+            if (id != guess[i]) {
+                console.log(`${i} has been selected already.`);
+            }   else {
+                console.log(`You have chosen ${i}.`);
+            }
+        }
+
     }; // END PLAYER GUESS
 
 
