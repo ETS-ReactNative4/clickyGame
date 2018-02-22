@@ -4,7 +4,7 @@
 */
 
 // DEPENDENCIES
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 // JUMBOTRON
 import Jumbotron from "./components/Jumbotron";
@@ -21,15 +21,15 @@ import Pic from "./Images.json";
 // APP COMPONENT
 class App extends Component {
 
-    
 
+    // PLAYER GUESS
     playerGuess = (id) => {
         console.log(id);
-    };
+    }; // END PLAYER GUESS
 
 
     // RENDRER
-    render () {
+    render() {
         // RETRUN THIS HTML
         return (
             // THESE COMPONENTS STAY OUT OF THE CONTAINER
@@ -40,15 +40,15 @@ class App extends Component {
                 </div>
                 {/* JUMBOTRON */}
                 <div className="row">
-                    <Jumbotron  />     
-                </div> 
+                    <Jumbotron />
+                </div>
                 <div className="container">
                     {/* IMAGE */}
                     <div className="row">
-                        <Image 
+                        <Image
                             onClick={this.playerGuess}
-                            image={Pic}/>
-                    </div>                  
+                            image={Pic} />
+                    </div>
                 </div>
                 <div className="row">
                     <Footer />
