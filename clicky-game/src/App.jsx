@@ -18,13 +18,17 @@ import Image from "./components/Image";
 //  IMAGES
 import Pic from "./Images.json";
 
+const guess = [];
+
 // APP COMPONENT
 class App extends Component {
 
-
+    
     // PLAYER GUESS
     playerGuess = (id) => {
         console.log(id);
+        guess.push(id);
+        console.log(guess);
     }; // END PLAYER GUESS
 
 
