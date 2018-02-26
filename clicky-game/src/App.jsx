@@ -18,10 +18,15 @@ import Image from "./components/Image";
 //  IMAGES
 import Pic from "./Images.json";
 
+// GAME RULE VARS
 const guess = [];
+let score = 0;
+let highScore = 0;
 
 // APP COMPONENT
 class App extends Component {
+
+    
 
     constructor (props) {
         super(props);
@@ -34,13 +39,18 @@ class App extends Component {
     playerGuess = (id) => {
         // LOG THE ID 
         console.log(id);
-        // PUSH THE ID INTO THE ARRAY
-        guess.push(id);
-        // LOG THE ARRAY WITH THE NEW ENTRY 
-        console.log(guess);
+        // CHACK TO SEE IF IMG HAS BEEN CHOSEN YET
+        if(guess.indexOf(id) > -1) {
+            console.log("Already chosen");
+            highScore += score;
+            score = 0;
+        } else {
 
+            console.log("Good Guess!");
+            guess.push(id);
+            score++;
 
-
+        }
 
     }; // END PLAYER GUESS
 
@@ -73,6 +83,7 @@ class App extends Component {
             </div>
         );  // END RETURN
     };  // END RENDER
+
 };  // END APP COMPONENT
 
 // EXPORT APP COMPONENT
