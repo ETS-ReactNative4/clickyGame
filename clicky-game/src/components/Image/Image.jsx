@@ -32,13 +32,15 @@ function Image(props) {
         // RETURN THIS COMPONENT
         return (
             <div className="col-xs-4 col-xs-3 col-xs-3">
-                <button onClick={(e) => {
+                <button 
+                key={img.id.toString()}
+                onClick={(e) => {
                     e.preventDefault();
                     props.onClick(img.id)
                 }}
                     type="button"
                     className="btn btn-default btn-lg"
-                    key={img.id}>
+                    >
                     {img.link}
                 </button>
             </div>

@@ -26,14 +26,12 @@ let highScore = 0;
 // APP COMPONENT
 class App extends Component {
 
-    
-
     constructor (props) {
         super(props);
         this.state = {
             correct: true
         };
-    }
+    };
 
     // PLAYER GUESS
     playerGuess = (id) => {
@@ -41,17 +39,17 @@ class App extends Component {
         console.log(id);
         // CHACK TO SEE IF IMG HAS BEEN CHOSEN YET
         if(guess.indexOf(id) > -1) {
+            
             console.log("Already chosen");
             highScore += score;
             score = 0;
+            this.setState({correct: true});
         } else {
-
             console.log("Good Guess!");
             guess.push(id);
             score++;
-
-        }
-
+            this.setState({correct: false});
+        };
     }; // END PLAYER GUESS
 
 
@@ -63,7 +61,11 @@ class App extends Component {
             <div>
                 {/* NAVBAR */}
                 <div className="row">
-                    <Navbar />
+                    <Navbar
+                        feedback={this.state}
+                        score={score}
+                        highScore={highScore}
+                    />
                 </div>
                 {/* JUMBOTRON */}
                 <div className="row">
@@ -74,7 +76,8 @@ class App extends Component {
                     <div className="row">
                         <Image
                             onClick={this.playerGuess}
-                            image={Pic} />
+                            image={Pic}
+                            />
                     </div>
                 </div>
                 <div className="row">
