@@ -62,7 +62,6 @@ class App extends Component {
                 {/* NAVBAR */}
                 <div className="row">
                     <Navbar
-                        feedback={this.state}
                         score={score}
                         highScore={highScore}
                     />
