@@ -19,7 +19,7 @@ import Image from "./components/Image";
 import Pic from "./Images.json";
 
 // GAME RULE VARS
-const guess = [];
+let guess = [];
 let score = 0;
 let highScore = 0;
 
@@ -39,11 +39,17 @@ class App extends Component {
         console.log(id);
         // CHACK TO SEE IF IMG HAS BEEN CHOSEN YET
         if(guess.indexOf(id) > -1) {
-            
             console.log("Already chosen");
-            highScore += score;
-            score = 0;
-            this.setState({correct: true});
+            if (score > highScore) {
+                highScore = score;
+                score = 0;
+                guess = [];
+                this.setState({correct: true});
+            } else {
+                score = 0;
+                guess = [];
+                this.setState({correct: true});
+            }
         } else {
             console.log("Good Guess!");
             guess.push(id);
