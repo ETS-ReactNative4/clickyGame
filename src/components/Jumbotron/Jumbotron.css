@@ -6,11 +6,6 @@
 
 .jumbotron {
     color: #00E500;
-    height: 400px;
-    clear: 'both';
     background-color: #373737;
-}
-
-.jumbo-header {
-    font-weight: 300;    
+    margin: 0;
 }

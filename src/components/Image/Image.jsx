@@ -41,7 +41,9 @@ function Image(props) {
                     type="button"
                     className="btn btn-default btn-lg"
                     >
-                    {img.link}
+                    
+                    <img src={img.link} alt={img.name} height='200'/>
+                    
                 </button>
             </div>
         ); // END RETURN

@@ -39,7 +39,6 @@ class App extends Component {
         console.log(id);
         // CHACK TO SEE IF IMG HAS BEEN CHOSEN YET
         if(guess.indexOf(id) > -1) {
-            console.log("Already chosen");
             if (score > highScore) {
                 highScore = score;
                 score = 0;
@@ -65,16 +64,17 @@ class App extends Component {
         return (
             // THESE COMPONENTS STAY OUT OF THE CONTAINER
             <div>
+
+                {/* JUMBOTRON */}
+                <div className="row">
+                    <Jumbotron />
+                </div>
                 {/* NAVBAR */}
                 <div className="row">
                     <Navbar
                         score={score}
                         highScore={highScore}
                     />
-                </div>
-                {/* JUMBOTRON */}
-                <div className="row">
-                    <Jumbotron />
                 </div>
                 <div className="container">
                     {/* IMAGE */}

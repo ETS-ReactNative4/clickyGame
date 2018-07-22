@@ -1,50 +1,61 @@
 [
     {
         "id": "1",
-        "link": "The Flash"
+        "name": "Sinestro",
+        "link": "./assets/images/sinestro.png"
     },
     {
         "id": "2",
-        "link": "Catwoman"      
+        "name": "Barry Allen",
+        "link": "./assets/images/barry-allen.jpg"      
     },
-     {
+    {
         "id": "3",
-        "link": "Superman"  
+        "name": "Lex Luthor",
+        "link": "./assets/images/lex-luthor.jpg"  
     },
     {
         "id": "4",
-        "link": "Mr. Freeze"
+        "name": "Joker",
+        "link": "./assets/images/joker.jpg"
     },
     {
         "id": "5",
-        "link": "Batman"
+        "name": "John Stewart",
+        "link": "./assets/images/john-stewart.jpg"
     },
     {
         "id": "6",
-        "link": "Cyborg"      
+        "name": "Wally West",
+        "link": "./assets/images/wally-west.jpg"      
     },
     {
         "id": "7",
-        "link": "Joker"
+        "name": "Green Arrow",
+        "link": "./assets/images/green-arrow.jpg"
     },
     {
         "id": "8",
-        "link": "Wonder Woman"        
+        "name": "Batman",
+        "link": "./assets/images/batman.jpg"        
     },
     {
         "id": "9",
-        "link": "Aqua Man"  
+        "name": "Aqua Man",
+        "link": "./assets/images/aqua-man.jpg"
     },
     {
         "id": "10",
-        "link": "Arrow" 
+        "name": "Wonder Women",
+        "link": "./assets/images/wonder-woman.jpeg" 
     },
     {
         "id": "11",
-        "link": "Reverse Flash" 
+        "name": "Superman",
+        "link": "./assets/images/superman.jpg" 
     },
     {
         "id": "12",
-        "link": "Killer Frost" 
+        "link": "./assets/images/hal-jordan.jpg" 
     }
 ]
