@@ -23,7 +23,7 @@ let highScore = 0;
 
 const styles = {
     imageContent: {
-        marginBottom: 125
+        marginBottom: 120
     }
 }; // END STYLES 
 
