@@ -10,8 +10,6 @@ import React, { Component } from "react";
 import Jumbotron from "./components/Jumbotron";
 // NAVBAR
 import Navbar from "./components/Navbar";
-// FOOTER 
-import Footer from "./components/Footer";
 // IMAGE
 import Image from "./components/Image";
 
@@ -22,6 +20,12 @@ import Pic from "./Images.json";
 let guess = [];
 let score = 0;
 let highScore = 0;
+
+const styles = {
+    imageContent: {
+        marginBottom: 125
+    }
+}; // END STYLES 
 
 // APP COMPONENT
 class App extends Component {
@@ -64,7 +68,6 @@ class App extends Component {
         return (
             // THESE COMPONENTS STAY OUT OF THE CONTAINER
             <div>
-
                 {/* JUMBOTRON */}
                 <div className="row">
                     <Jumbotron />
@@ -78,15 +81,12 @@ class App extends Component {
                 </div>
                 <div className="container">
                     {/* IMAGE */}
-                    <div className="row">
+                    <div className="row" style={styles.imageContent}>
                         <Image
                             onClick={this.playerGuess}
                             image={Pic}
                             />
                     </div>
-                </div>
-                <div className="row">
-                    <Footer />
                 </div>
             </div>
         );  // END RETURN
