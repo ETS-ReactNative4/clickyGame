@@ -4,8 +4,8 @@
 
 // DEPENDENCIES
 import React from "react";
-// IMAGE STYLES
-import "./Image.css";
+
+import styles from "./ImageStyles";
 
 // SHUFFLE ARRAY MOVES EVERYTHING IN THE ARRAY AROUND RANDOMLY BEFORE RENDERING
 function shuffleArray(array) {
@@ -31,10 +31,11 @@ function Image(props) {
     const renderImage = shuffledPosts.map(img => {
         // RETURN THIS COMPONENT
         return (
-            <div className="col-xs-4 col-xs-3 col-xs-3">
+            <div className="col-xs-4 col-md-3">
                 <button 
-                key={img.id.toString()}
-                onClick={(e) => {
+                    style={styles.imageStyle}
+                    key={img.id.toString()}
+                    onClick={(e) => {
                     e.preventDefault();
                     props.onClick(img.id)
                 }}
@@ -42,7 +43,7 @@ function Image(props) {
                     className="btn btn-default btn-lg"
                     >
                     
-                    <img src={img.link} alt={img.name} height='200'/>
+                    <img src={img.link} alt={img.name} height='175' width='175'/>
                     
                 </button>
             </div>
